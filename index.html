@@ -12,13 +12,13 @@
     <title>Are you a Banana?</title>
 </head>
 <body>
-<h1>Are you a banana?</h1>
 <div class="container-fluid">
-    <form>
+    <h1>Are you a banana?</h1>
+    <form action="results.html" method="get">
         <div class="form-group">
             <label for="inputFingerLength">Which of your fingers is longer?</label>
             <select class="mdb-select md-form" id="inputFingerLength">
-                <option value="" disabled selected>Choose</option>
+                <option value="" disabled selected></option>
                 <option value="1">Index finger</option>
                 <option value="2">Middle finger</option>
                 <option value="3">Ring finger</option>
@@ -26,7 +26,7 @@
         </div>
         <div class="form-group">
             <label for="inputEye">Describe your eyes</label>
-            <input type="text" class="form-control" id="inputEye" aria-describedby="emailHelp" placeholder="your eyes are...">
+            <input type="text" class="form-control" id="inputEye" aria-describedby="inputEye" placeholder="my eyes are...">
             <small id="eyeHelp" class="form-text text-muted">Please be as detailed as possible. This gives our ML clues to your underlying bananomes.</small>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
