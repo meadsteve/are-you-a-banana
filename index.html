@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-pLgJ8jZ4aoPja/9zBSujjzs7QbkTKvKw1+zfKuumQF9U+TH3xv09UUsRI52fS+A6" crossorigin="anonymous">
+
+    <title>Are you a Banana?</title>
+</head>
+<body>
+<h1>Are you a banana?</h1>
+<div class="container-fluid">
+    <form>
+        <div class="form-group">
+            <label for="inputFingerLength">Which of your fingers is longer?</label>
+            <select class="mdb-select md-form" id="inputFingerLength">
+                <option value="" disabled selected>Choose</option>
+                <option value="1">Index finger</option>
+                <option value="2">Middle finger</option>
+                <option value="3">Ring finger</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="inputEye">Describe your eyes</label>
+            <input type="text" class="form-control" id="inputEye" aria-describedby="emailHelp" placeholder="your eyes are...">
+            <small id="eyeHelp" class="form-text text-muted">Please be as detailed as possible. This gives our ML clues to your underlying bananomes.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
