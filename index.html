@@ -8,29 +8,67 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/litera/bootstrap.min.css" rel="stylesheet" integrity="sha384-pLgJ8jZ4aoPja/9zBSujjzs7QbkTKvKw1+zfKuumQF9U+TH3xv09UUsRI52fS+A6" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
 
     <title>Are you a Banana?</title>
 </head>
 <body>
-<div class="container-fluid">
-    <h1>Are you a banana?</h1>
-    <form action="results.html" method="get">
-        <div class="form-group">
-            <label for="inputFingerLength">Which of your fingers is longer?</label>
-            <select class="mdb-select md-form" id="inputFingerLength">
-                <option value="" disabled selected></option>
-                <option value="1">Index finger</option>
-                <option value="2">Middle finger</option>
-                <option value="3">Ring finger</option>
-            </select>
+<div class="container">
+    <div class="card border-0 shadow my-5">
+        <div class="card-body p-5">
+            <h1>Are you a banana?</h1>
+            <p>
+                Genes shared with bananas have been discovered in all human populations around the globe.
+                A full dna test would be required to get a fully accurate answer but the questions below, fed in
+                to our ML algorithm can give an approximate guess at how closely related to a banana you are.
+            </p>
+            <form action="results.html" method="get">
+                <div class="form-group">
+                    <label for="inputFingerLength">Which of your fingers is longer?</label>
+                    <select class="mdb-select md-form" id="inputFingerLength">
+                        <option value="" disabled selected></option>
+                        <option value="1">Index finger</option>
+                        <option value="2">Middle finger</option>
+                        <option value="3">Ring finger</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputOnionSmell">Do onions have an earthy smell to you?</label>
+                    <select class="mdb-select md-form" id="inputOnionSmell">
+                        <option value="" disabled selected></option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                        <option value="3">Not sure</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputAnnoyance">How much does the sound of people eating annoy you?</label>
+                    <select class="mdb-select md-form" id="inputAnnoyance">
+                        <option value="" disabled selected></option>
+                        <option value="1">A lot</option>
+                        <option value="2">Somewhat</option>
+                        <option value="3">Not much</option>
+                        <option value="4">Not at all</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputHearing">Which sounds louder to you: a telephone or a car</label>
+                    <select class="mdb-select md-form" id="inputHearing">
+                        <option value="" disabled selected></option>
+                        <option value="1">Telephone</option>
+                        <option value="2">Car</option>
+                        <option value="3">Both about the same</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="inputEye">Describe your eyes</label>
+                    <input type="text" class="form-control" id="inputEye" aria-describedby="inputEye" placeholder="my eyes are...">
+                    <small id="eyeHelp" class="form-text text-muted">Please be as detailed as possible. This gives our ML clues to your underlying bananomes.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </div>
-        <div class="form-group">
-            <label for="inputEye">Describe your eyes</label>
-            <input type="text" class="form-control" id="inputEye" aria-describedby="inputEye" placeholder="my eyes are...">
-            <small id="eyeHelp" class="form-text text-muted">Please be as detailed as possible. This gives our ML clues to your underlying bananomes.</small>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    </div>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

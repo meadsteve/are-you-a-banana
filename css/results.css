@@ -1,0 +1,7 @@
+body {
+    background: url("https://upload.wikimedia.org/wikipedia/commons/f/ff/Banana_and_cross_section.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
